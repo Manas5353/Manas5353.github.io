@@ -1,0 +1,163 @@
+header,.hero-section {
+  transition: background-color 0.5s ease;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding-top: 56px; /* Adjusted padding to accommodate fixed navbar */
+  background-image: url('/images/pexels-max-rahubovskiy-7031705.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Ensure the background remains fixed while scrolling */
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+header {
+  background: transparent;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  transition: all 300ms ease-in-out;
+}
+
+.custom-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+}
+
+.navbar-brand-text {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #d07a34;
+}
+
+.hero-section {
+  position: relative;
+  height: calc(100vh - 56px); /* Subtract navbar height from viewport height */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-section-text {
+  z-index: 1;
+}
+
+.hero-section-text h1,
+.hero-section-text p {
+  margin: 0;
+}
+
+.hero-section-btn {
+  z-index: 1;
+  margin-top: 20px;
+}
+
+#about-section {
+  padding: 50px;
+  background-color: #f8f9fa;
+}
+
+#about-section p {
+  color: #fff;
+}
+
+.explore-btn {
+  display: block;
+  margin-top: 20px;
+}
+
+/* CSS for the GYM Feature Section */
+.feature {
+  background-color: #EB9486;
+  height: 100vh;
+}
+
+.feature h4.text-primary,
+.feature h4.display-4 {
+  color: #000; /* Set color of h4 to black */
+}
+
+.feature p,
+.feature i {
+  color: #fff; /* Set color of rest of the text to white */
+}
+
+
+.footer {
+  background-image: url('/images/your-background-image.jpg'); /* Replace with your image path */
+  background-size: cover;
+  position: relative;
+  padding: 40px 0; /* Adjust the padding to your preference */
+  height: 60vh; /* Adjust the height to your preference */
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Adjust the alpha value for the overlay */
+}
+
+.footer .text-primary {
+  color: #fff;
+}
+
+.footer a {
+  color: #fff;
+}
+
+
+.container-fluid.nav-bar {
+  margin-top: 0 !important;
+}
+
+header {
+  margin-top: 0;
+  padding-top: 0;
+}
