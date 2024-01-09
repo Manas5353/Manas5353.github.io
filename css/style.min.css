@@ -21,7 +21,7 @@
 	--white: #fff;
 	--gray: #6c757d;
 	--gray-dark: #343a40;
-	--primary: #E31C25;
+	--primary: #e3791cdf;
 	--secondary: #111111;
 	--success: #28a745;
 	--info: #17a2b8;
@@ -10418,7 +10418,7 @@ button.bg-dark:hover {
 }
 
 .text-primary {
-	color: #e31c25 !important
+	color: #e31c25
 }
 
 a.text-primary:focus,
@@ -10720,12 +10720,14 @@ a.text-dark:hover {
 }
 
 .gym-class .gym-class-box {
-	min-height: 450px
+	min-height: 450px;
+	margin: 0; 
+	padding: 0;
 }
 
 @media (min-width:992px) {
 	.gym-class {
-		margin-top: -90px;
+		margin-top: 50px;
 		z-index: 1
 	}
 }
@@ -10740,7 +10742,7 @@ a.text-dark:hover {
 }
 
 .gym-class .gym-class-box.text-right i {
-	left: 0
+	left: 0px
 }
 
 .gym-class .gym-class-box.text-left i {
@@ -10820,7 +10822,7 @@ a.text-dark:hover {
 		height: 100%;
 		top: 0;
 		right: 0;
-		background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/carousel-2.jpg);
+		background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(/images/carousel-2.jpg);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -10861,8 +10863,16 @@ a.text-dark:hover {
 .footer,
 .page-header,
 .subscribe {
-	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../img/bg.jpg);
+	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(/images/footer.jpg);
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover
+}
+
+.footer-container {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
 }
